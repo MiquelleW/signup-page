@@ -2,6 +2,12 @@
   box-sizing: border-box;
 }
 
+:root {
+  --page-bg: #f5f5f5;
+  --text: #111111;
+  --brand: #c40000;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -12,10 +18,12 @@ body {
   margin: 0 24px;
   background-color: #f5f5f5;
   color: #111111;
+  background-color: var(--page-bg);
+  color: var(--text);
 }
 
 h1 {
-  color: #c40000;
+  color: var(--brand);
   font-size: 2.5rem;
 }
 
@@ -25,7 +33,7 @@ h2 {
 
 .box {
   margin: 40px 0;
-  border: 3px dashed #c40000;
+  border: 3px dashed var(--brand);
   padding: 60px;
   background-color: #ffffff;
 }
@@ -60,7 +68,7 @@ button {
 input:focus,
 select:focus,
 textarea:focus {
-  outline: 3px solid #c40000;
+  outline: 3px solid var(--brand);
   outline-offset: 2px;
 }
 
@@ -81,7 +89,7 @@ input:user-invalid {
 
 .card {
   flex: 1 1 200px;
-  border: 2px solid #c40000;
+  border: 2px solid var(--brand);
   padding: 16px;
 }
 
@@ -100,6 +108,20 @@ form {
   display: flex;
   flex-direction: column;
   gap: 4px;
+}
+
+nav {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
 }
 
 .hero {
@@ -127,4 +149,26 @@ form {
   .hero h2 {
     font-size: 3rem;
   }
+}
+
+body.dark {
+  --page-bg: #1b1b1b;
+  --text: #f5f5f5;
+  --brand: #ff8585;
+}
+
+body.dark nav a {
+  color: lightblue;
+}
+
+body.dark .box {
+  color: #111111;
+}
+
+body.dark .compare h2 {
+  color: var(--text);
+}
+
+body.dark #reasons h2 {
+  color: var(--text);
 }
