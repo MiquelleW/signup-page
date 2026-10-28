@@ -33,3 +33,24 @@ img {
   display: block;
   margin: 20px auto;
 }
+
+label {
+  display: block;
+  margin-top: 16px;
+  font-weight: bold;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  max-width: 30rem;
+  padding: 8px;
+  font: inherit;
+}
+
+button {
+  margin-top: 16px;
+  padding: 10px 20px;
+  font: inherit;
+}
