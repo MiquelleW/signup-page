@@ -69,3 +69,8 @@ textarea:focus {
 input:user-invalid {
   border: 2px solid crimson;
 }
+
+.email-help {
+  font-size: 0.875rem;
+  color: #666666;
+}
