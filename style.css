@@ -74,3 +74,17 @@ input:user-invalid {
   font-size: 0.875rem;
   color: #666666;
 }
+
+.cards {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+
+.card {
+  flex: 1 1 200px;
+  border: 2px solid #c40000;
+  padding: 16px;
+}
+
