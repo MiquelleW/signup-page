@@ -46,10 +46,38 @@
 
       <section id="join" class="box">
         <h2>Join the Club</h2>
+
         <p>
           Interested in photography and meeting other creatives? Join the N.U.i.
-          Creative Photo Walk Club! Our signup form will be available here soon.
+          Creative Photo Walk Club! Complete the form below to express your
+          interest.
         </p>
+
+        <form>
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="you@example.com"
+            required
+          />
+
+          <label for="session">Which photo walk interests you?</label>
+          <select id="session" name="session">
+            <option value="nature">Nature Photo Walk</option>
+            <option value="street">Street Photography Walk</option>
+            <option value="either">Either Photo Walk</option>
+          </select>
+
+          <label for="message">Anything we should know?</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+
+          <button type="submit">Sign me up</button>
+        </form>
       </section>
     </main>
 
