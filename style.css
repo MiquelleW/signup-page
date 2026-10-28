@@ -101,3 +101,24 @@ form {
   flex-direction: column;
   gap: 4px;
 }
+
+.hero {
+  background-color: rgba(145, 0, 0, 0.85);
+  color: white;
+  padding: 64px 24px;
+  text-align: center;
+}
+
+.hero h2 {
+  color: white;
+}
+
+.cta {
+  display: inline-block;
+  background-color: gold;
+  color: black;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
