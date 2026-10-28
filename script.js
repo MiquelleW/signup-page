@@ -18,3 +18,12 @@ function sayBye() {
 
 sayBye();
 sayBye();
+
+let nextButton = document.querySelector("#next-btn");
+let nextMeeting = document.querySelector("#next-meeting");
+
+function showNextMeeting() {
+  nextMeeting.textContent = "Our next photo walk date will be announced soon!";
+}
+
+nextButton.addEventListener("click", showNextMeeting);
