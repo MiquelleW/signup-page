@@ -155,13 +155,14 @@ body.dark {
   --page-bg: #1b1b1b;
   --text: #f5f5f5;
   --brand: #ff8585;
+  --surface: #807c7c;
 }
 
 body.dark nav a {
   color: lightblue;
 }
 
-body.dark .box {
+/* body.dark .box {
   color: #111111;
 }
 
@@ -171,4 +172,4 @@ body.dark .compare h2 {
 
 body.dark #reasons h2 {
   color: var(--text);
-}
+} */
