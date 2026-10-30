@@ -143,6 +143,7 @@ nav ul {
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
+  transition: background-color 0.3s;
 }
 
 @media (min-width: 700px) {
@@ -211,4 +212,18 @@ nav a:hover {
 
 body.dark .email-help {
   color: #bdbdbd;
+}
+
+body.dark .bottom-cta h2 {
+  color: var(--text);
+}
+
+.cta:hover,
+.cta:focus-visible {
+  background-color: orange;
+  outline: 3px solid black;
+}
+
+body.dark #faq h2 {
+  color: var(--text);
 }
