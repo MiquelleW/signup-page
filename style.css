@@ -162,7 +162,12 @@ body.dark nav a {
 }
 
 body.dark .box {
-  color: #111111;
+  background-color: #292929;
+  color: var(--text);
+}
+
+body.dark .box h2 {
+  color: var(--text);
 }
 
 body.dark .compare h2 {
@@ -171,4 +176,39 @@ body.dark .compare h2 {
 
 body.dark #reasons h2 {
   color: var(--text);
+}
+
+header {
+  background-color: var(--brand);
+  color: var(--page-bg);
+  padding: 24px;
+  text-align: center;
+}
+
+header h1 {
+  color: var(--page-bg);
+}
+
+nav {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 12px;
+}
+
+nav a {
+  color: var(--brand);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+nav a:hover {
+  outline: 2px solid currentColor;
+}
+
+body.dark .email-help {
+  color: #bdbdbd;
 }
